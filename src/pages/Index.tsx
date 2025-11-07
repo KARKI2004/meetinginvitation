@@ -33,6 +33,7 @@ export default function Index() {
   const header = getAny("header");
   const subheader = getAny("subheader");
   const description = getAny("description");
+  const tagline = getAny("tagline");
   const dateUS = getAny("dateus", "date_us");
   const dateVN = getAny("datevn", "date_vn");
   const bioURL = getAny("bio_url", "bio_link", "biolink");
@@ -77,7 +78,7 @@ export default function Index() {
                 />
               </div>
               <p className="text-center text-sm italic text-white">
-                To share their thoughts on the opportunity for collaboration.
+                {tagline}
               </p>
             </section>
 

@@ -18,18 +18,18 @@ const SpeakerCard = ({ name, roleLabel, bio }: SpeakerCardProps) => {
   return (
     <div className="relative group">
       {/* Base Card */}
-      <Card className="bg-primary transition-all duration-300 cursor-default p-6 border-none">
+      <Card
+        className="bg-[hsl(var(--deep-green))]/90 transition-all duration-300
+                   cursor-default p-6 border border-white/10
+                   shadow-[0_4px_12px_rgba(0,0,0,0.3)] rounded-xl"
+      >
         <div className="text-center transition-opacity duration-200 group-hover:opacity-10">
-          <h3 className="text-lg font-semibold text-primary-foreground">
-            {name}
-          </h3>
-          <p className="text-sm text-primary-foreground/90 mt-2">
-            {roleLabel}
-          </p>
+          <h3 className="text-lg font-semibold text-white">{name}</h3>
+          <p className="text-sm text-white/90 mt-2">{roleLabel}</p>
         </div>
       </Card>
 
-      {/* Read Short Bio Button (Center Fade-In) */}
+      {/* Read Short Bio Button */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
         <Dialog>
           <DialogTrigger asChild>
@@ -52,13 +52,13 @@ const SpeakerCard = ({ name, roleLabel, bio }: SpeakerCardProps) => {
           {/* Pop-up Bio Card */}
           <DialogContent
             className="max-w-2xl overflow-auto max-h-[80vh]
-                       bg-[rgba(14,77,45,0.95)] border border-white/20
+                       bg-[hsl(var(--deep-green))]/95 border border-white/20
                        backdrop-blur-md rounded-2xl shadow-2xl
                        text-white p-8 animate-in fade-in-50 zoom-in-50 duration-300"
           >
             <DialogHeader className="border-b border-white/20 pb-4 mb-4">
               <DialogTitle className="text-2xl font-bold text-[#FFC629]">
-                {name}
+                {name} 
               </DialogTitle>
             </DialogHeader>
 
