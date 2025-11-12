@@ -7,36 +7,18 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Dependency directories
-node_modules/
+node_modules
+dist
+dist-ssr
+*.local
 
-# Build and cache outputs
-dist/
-dist-ssr/
-.vite/
-build/
-
-# Local environment files
-.env
-.env.local
-.env.development
-.env.production
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Editor settings
+# Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea/
+.idea
+.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-
-# Optional: lockfiles (if you want to keep repo clean)
-# yarn.lock
-# package-lock.json
-# pnpm-lock.yaml

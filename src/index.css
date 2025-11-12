@@ -17,9 +17,9 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 160 45% 15%;
 
-    /* Southeastern Louisiana University Green */
---primary: 144 54% 22%; /* Southeastern Green – Pantone 357 C (#1A5632) */
---primary-foreground: 0 0% 100%;
+    /* Deep emerald green */
+    --primary: 160 55% 25%;
+    --primary-foreground: 0 0% 100%;
     
     /* Rich gold */
     --secondary: 43 75% 50%;
