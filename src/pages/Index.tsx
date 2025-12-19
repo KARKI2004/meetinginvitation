@@ -44,10 +44,11 @@ export default function Index() {
   const mainSpeakerBio = getAny("mainspeakerbio", "main_speaker_bio");
   const facilitator = getAny("facilitator");
   const facilitatorBio = getAny("facilitatorbio");
+  const day = getAny("day");
 
   return (
     <>
-      <Header header={header} />
+      <Header header={header} day={day} />
 
       <section className="bg-[#FFC629]/95 py-2">
         <div className="container mx-auto px-4">
