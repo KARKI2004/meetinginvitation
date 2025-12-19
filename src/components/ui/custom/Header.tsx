@@ -1,10 +1,9 @@
-import { Button } from "@/components/ui/button";
-
 interface HeaderProps {
   header: string;
+  day?: string;
 }
 
-export default function Header({ header }: HeaderProps) {
+export default function Header({ header, day }: HeaderProps) {
   return (
     <header className="bg-[hsl(var(--deep-green))]/90 py-4 shadow-lg">
       <div className="container mx-auto px-4 flex items-center justify-between">
@@ -28,7 +27,13 @@ export default function Header({ header }: HeaderProps) {
           {header}
         </h1>
 
-        <div className="w-10" />
+        <div className="min-w-[80px] text-right">
+          {day && (
+            <span className="text-[hsl(var(--gold))] font-semibold text-lg">
+              {day}
+            </span>
+          )}
+        </div>
       </div>
     </header>
   );
